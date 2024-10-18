@@ -22,6 +22,7 @@ def ltris(l: [[float]], b: [float]) -> [float]:
         x[i] = x[i] / l[i][i]
     return x
 
+
 if __name__ == "__main__":
     A = [[2, 4, -2],
          [4, 9, -3],
@@ -35,7 +36,7 @@ if __name__ == "__main__":
     n = 6
     A = np.random.randn(n, n)
     b = np.random.randn(n)
-    f(A,b)
+    f(A, b)
     print('A:\n', A)
     print('b:\n', b)
     print('X:\n', ltris(A, b))
